@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script src="4-28.js" type="text/javascript" charset="utf-8"></script>
+	<script src="animate.js" type="text/javascript" charset="utf-8"></script>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 200px;
+			background: yellow;
+			position: absolute;
+			left: 25px;
+			bottom: 50px;
+		}
+		.guanka{
+			width: 290px;
+			height: 60px;
+			background: red;
+			font-size: 24px;
+			color: #fff;
+			line-height: 60px;
+			padding-left: 10px;
+			position: absolute;
+			top: 10px;
+			left: 0;
+		}
+		.guanka span{
+			width: 200px;
+			height: 60px;
+			background: blue;
+			text-align: center;
+			line-height: 60px;
+			float: right;
+		}
+		.shengmin{
+			width: 290px;
+			height: 60px;
+			background: red;
+			font-size: 24px;
+			color: #fff;
+			line-height: 60px;
+			padding-left: 10px;
+			position: absolute;
+			top: 70px;
+			left: 0;
+		}
+		.shengmin span{
+			width: 200px;
+			height: 60px;
+			background: blue;
+			text-align: center;
+			line-height: 60px;
+			float: right;
+		}
+		.fengshu{
+			width: 290px;
+			height: 60px;
+			background: red;
+			font-size: 24px;
+			color: #fff;
+			line-height: 60px;
+			padding-left: 10px;
+			position: absolute;
+			top: 130px;
+			left: 0;
+		}
+		.fengshu span{
+			width: 200px;
+			height: 60px;
+			background: blue;
+			text-align: center;
+			line-height: 60px;
+			float: right;
+		}
+	</style>
+	<body style="background-image: url(apple.png);background-size: cover;">
+		<div class="box">
+			<div class="guanka">
+				关卡
+				<span>1</span>
+			</div>
+			<div class="shengmin">
+				生命
+				<span>10</span>
+			</div>
+			<div class="fengshu">
+				分数
+				<span>0</span>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	function Game(){
+		this.charArr=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+		this.charLengh=5;                           //定义每次掉落字母的最大数量        charArr是定义掉落的字母
+		this.Cw=window.innerWidth;					//定义浏览器的宽度
+		this.Ch=window.innerHeight;					//定义浏览器的高度
+		this.currentArr=[];                         //这个数组是存创建的DIV
+		this.currentpos=[];							//这个数组是存创建的DIV随机出现的位置，目的是为了解决两个元素的位置重叠
+		this.speed=1;				//定义字母下落的速度
+		this.gq=document.querySelector(".guanka span");
+		this.fs=document.querySelector(".fengshu span");
+		this.sm=document.querySelector(".shengmin span");
+		this.smm=10;
+		this.fss=0;
+		this.gqq=1;
+		this.num=10;
+	}
+	Game.prototype={
+		start:function(){                           //定义游戏的方法
+			this.getElements(this.charLengh);       //定义长度 
+			this.drop();							//掉落函数
+			this.key();								//敲击键盘消除下落的字母
+		},
+		getElements:function(length){				//多少个，哪些元素
+			for(let i=0;i<length;i++){
+				this.getChar();                     
+			}
+		},
+		checkRepeat:function(text){                           //去除下落重复的下落字母
+			return this.currentArr.some(function(value){
+				return	value.innerText==text;
+			})
+		},
+		checkPosition:function(lefts){
+			return this.currentpos.some(function(value){
+				return value+80>lefts&&lefts+80>value;
+			})
+		},
+		getChar:function(){
+			let num=Math.floor(Math.random()*this.charArr.length);	     //这一步是获取charArr数组中的随机下标，从而获取掉落的元素
+			while(this.checkRepeat(this.charArr[num])){                      //去除下落重复的下落字母
+				num=Math.floor(Math.random()*this.charArr.length);	
+			}
+			let ele=document.createElement('div');           //创建一个包含字母的div
+			let tops=Math.random()*100+100;					//定义div的高度范围
+			let lefts=(window.innerWidth-600)*Math.random()+300;          //定义div的宽度，先用浏览器的宽度减去600px，然后加300平移X轴
+			while(this.checkPosition(lefts)){                    //去除重复的位置
+				lefts=(window.innerWidth-600)*Math.random()+300;
+			}
+			this.currentpos.push(lefts);
+			ele.style.cssText=`
+				width:120px;
+				height:120px;
+				
+				background-image: url('timg.png');
+				background-size:100%;
+				background-repeat:no-repeat;
+				color:yellow;
+				font-size:50px;
+				text-align:center;
+				line-height:130px;
+				position:absolute;		
+				top:${tops}px;
+				left:${lefts}px;
+				
+			`;
+			ele.innerText=this.charArr[num];
+			document.body.appendChild(ele);
+			this.currentArr.push(ele);
+		},
+		//字母掉落
+		drop:function(){
+			self=this;
+			self.t=setInterval(function(){                       //定义一个事件函数，来控制字母掉落的最大高度和掉落速度
+				for(let i=0;i<self.currentArr.length;i++){      
+					let tops=self.currentArr[i].offsetTop+self.speed;
+					self.currentArr[i].style.top=tops+'px';            //定义currentArr数组中的第i个的下落高度+speed也就是下落的速度
+					if(tops>800){
+						document.body.removeChild(self.currentArr[i]);
+						self.currentArr.splice(i,1);
+						self.currentpos.splice(i,1);                   //当下落高度超过800时，消除掉屏幕中的字母，同时消除掉数组中第i个元素和他的位置
+						self.smm--;
+						self.sm.innerText=self.smm;
+						
+						if(self.smm==0){
+						let falg=window.confirm("您太弱了，重来吧！！！")
+							if(falg){
+								self.restart();
+							}else{
+								close()
+							}
+						}
+					}
+				}
+				if(self.currentArr.length<self.charLengh){             //当屏幕中苹果的数量少于5时，重新运行getChar函数，再次生成一个苹果
+					self.getChar()
+				}
+			},20)
+		},
+		restart:function(){
+			clearInterval(this.t);
+			for(let i=0;i<this.currentArr.length;i++){
+				document.body.removeChild(this.currentArr[i])
+			}
+			this.smm=10;
+			this.sm.innerText=this.smm;
+			this.fss=0;
+			this.fs.innerText=this.fss;
+			this.currentArr=[];
+			this.pos=[];
+			this.gqq+=20;
+			this.start();
+		},
+		
+		key:function(){
+			document.body.onkeydown=function(e){
+			let code=String.fromCharCode(e.keyCode)
+			for(let i=0;i<this.currentArr.length;i++){
+				if(code == this.currentArr[i].innerText){
+					document.body.removeChild(this.currentArr[i]);
+					this.currentArr.splice(i,1);
+					this.currentpos.splice(i,1)
+					
+					this.fss++;
+					this.fs.innerText=this.fss;
+					//到达关卡进入下一关
+					if(this.fss==this.num){
+						let flag=window.confirm("下一关")
+							if(flag){
+								this.next();
+							}else{
+								close();
+							}
+					}
+				}
+			}
+				if(this.currentArr.length < this.charLengh){
+					this.getChar()
+				}
+				if(e.keyCode==13){
+					alert("游戏暂停");
+				}
+			}.bind(this);
+		},	
+		next:function(){
+			clearInterval(this.t);
+			for(let i=0;i<this.currentArr.length;i++){
+					document.body.removeChild(this.currentArr[i])
+				}
+				this.currentArr=[];
+				this.currentpos=[];
+				this.charLengh++;
+				this.gqq++;
+				this.fss=0;
+				this.fs.innerText=this.fss;
+				this.num+=10;
+				this.gq.innerText=this.gqq;
+//				this.speed++;
+				
+				this.start();
+		}
+	}
+	let game=new Game;
+	game.start()
+</script>

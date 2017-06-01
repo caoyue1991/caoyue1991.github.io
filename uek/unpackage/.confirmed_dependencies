@@ -1,0 +1,477 @@
+{
+	"index.html": {
+		"resources": [
+			"img/logo.png",
+			"js/tianmao.js",
+			"css/youkeyi.css",
+			"img/banner.png",
+			"img/icon.png",
+			"img/batu.png",
+			"img/ufo.png",
+			"img/tijian.png",
+			"img/shiting.png",
+			"img/youyikedongtai.png",
+			"img/guanyuwomen.png",
+			"img/qq.png",
+			"css/iconfont.css",
+			"iconfont/iconfont.woff",
+			"WEB/index.html",
+			"jiangshi/index.html",
+			"wenti/index.html",
+			"xueyuan/index.html",
+			"xinwen/index.html",
+			"xueyuan/xueyuan.html",
+			"wenti/wenti.html",
+			"jiangshi/jiangshi.html",
+			"xinwen/xinwen.html",
+			"WEB/web.html",
+			"img/logo (1).png",
+			"PHP/index.html",
+			"UI/ui.html",
+			"guanyu/our.html",
+			"dongtai/xinwen.html",
+			"mianfeitijian/tijian.html",
+			"quanzhan/index.html",
+			"zhuxue/zhuxue.html"
+		],
+		"refer": [
+			"WEB/index.html",
+			"jiangshi/index.html",
+			"wenti/index.html",
+			"xueyuan/index.html",
+			"xinwen/index.html",
+			"xueyuan/xueyuan.html",
+			"wenti/wenti.html",
+			"jiangshi/jiangshi.html",
+			"xinwen/xinwen.html",
+			"WEB/web.html",
+			"PHP/index.html",
+			"UI/ui.html",
+			"guanyu/our.html",
+			"dongtai/xinwen.html",
+			"mianfeitijian/tijian.html",
+			"quanzhan/index.html",
+			"zhuxue/zhuxue.html"
+		]
+	},
+	"WEB/index.html": {
+		"resources": [
+			"WEB/img/qq.png",
+			"WEB/img/fwtx3.png",
+			"WEB/img/fwtx6.png",
+			"WEB/img/web1back.png",
+			"WEB/img/web1backs.png",
+			"WEB/img/fwtx5.png",
+			"WEB/img/webbanner.png",
+			"WEB/img/fwtx2.png",
+			"WEB/img/btn.png",
+			"WEB/css/youkeyi.css",
+			"WEB/img/fwtx1.png",
+			"WEB/img/webbfb.png",
+			"WEB/img/ui1lines.png",
+			"WEB/css/iconfont.css",
+			"WEB/img/fwtx4.png",
+			"WEB/img/icon.png",
+			"WEB/iconfont/iconfont.woff",
+			"WEB/js/tianmao.js",
+			"WEB/img/web4back.png",
+			"WEB/img/web4back2 (1).png",
+			"WEB/img/xiaoren.png",
+			"WEB/img/about_004.png",
+			"WEB/img/webkcback.png"
+		]
+	},
+	"jiangshi/index.html": {
+		"resources": [
+			"jiangshi/img/jiangshi1.png",
+			"jiangshi/img/banner1.jpg",
+			"jiangshi/iconfont/iconfont.woff",
+			"jiangshi/img/jiangshi4.jpg",
+			"jiangshi/img/jiangshi2.png",
+			"jiangshi/img/jiangshi5.jpg",
+			"index.html",
+			"jiangshi/css/iconfont.css",
+			"jiangshi/img/jiangshi3.png",
+			"jiangshi/img/qq.png",
+			"jiangshi/img/icon.png",
+			"jiangshi/js/tianmao.js",
+			"jiangshi/css/youkeyi.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"wenti/index.html": {
+		"resources": [
+			"index.html",
+			"wenti/img/banner1.jpg",
+			"wenti/js/tianmao.js",
+			"wenti/iconfont/iconfont.woff",
+			"wenti/img/qq.png",
+			"wenti/img/icon.png",
+			"wenti/css/iconfont.css",
+			"wenti/css/youkeyi.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"xueyuan/index.html": {
+		"resources": [
+			"xueyuan/js/tianmao.js",
+			"xueyuan/img/xueyuan2.png",
+			"xueyuan/img/xueyuan1.png",
+			"index.html",
+			"xueyuan/img/xueyuan5.png",
+			"xueyuan/img/xueyuan3.png",
+			"xueyuan/iconfont/iconfont.woff",
+			"xueyuan/img/banner1.jpg",
+			"xueyuan/img/icon.png",
+			"xueyuan/img/qq.png",
+			"xueyuan/css/iconfont.css",
+			"xueyuan/css/youkeyi.css",
+			"xueyuan/img/xueyuan4.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"xinwen/index.html": {
+		"resources": [
+			"xinwen/img/media_line.png",
+			"xinwen/iconfont/iconfont.woff",
+			"xinwen/img/qq.png",
+			"xinwen/img/20170117030101717.jpg",
+			"xinwen/img/banner1.jpg",
+			"xinwen/css/youkeyi.css",
+			"xinwen/img/20170117033628827.jpg",
+			"xinwen/img/20170117025727653.jpg",
+			"xinwen/js/tianmao.js",
+			"xinwen/img/media_icon.png",
+			"xinwen/img/20170117032029524.jpg",
+			"xinwen/img/20170217023531383.png",
+			"xinwen/css/iconfont.css",
+			"xinwen/img/s1.png",
+			"xinwen/img/s2.png",
+			"xinwen/img/s3.png",
+			"xinwen/img/s4.png"
+		]
+	},
+	"xueyuan/xueyuan.html": {
+		"resources": [
+			"xueyuan/js/tianmao.js",
+			"xueyuan/img/xueyuan1.png",
+			"xueyuan/img/xueyuan2.png",
+			"xueyuan/img/s2.png",
+			"xueyuan/img/xueyuan5.png",
+			"xueyuan/img/xueyuan3.png",
+			"xueyuan/iconfont/iconfont.woff",
+			"xueyuan/css/iconfont.css",
+			"xueyuan/css/youkeyi.css",
+			"xueyuan/img/xueyuan4.png",
+			"xueyuan/img/s4.png",
+			"xueyuan/img/s1.png",
+			"xueyuan/img/banner1.jpg",
+			"xueyuan/img/qq.png",
+			"xueyuan/img/s3.png",
+			"index.html",
+			"xinwen/xinwen.html"
+		],
+		"refer": [
+			"index.html",
+			"xinwen/xinwen.html"
+		]
+	},
+	"wenti/wenti.html": {
+		"resources": [
+			"wenti/img/banner1.jpg",
+			"wenti/js/tianmao.js",
+			"wenti/iconfont/iconfont.woff",
+			"wenti/img/qq.png",
+			"wenti/css/iconfont.css",
+			"wenti/css/youkeyi.css",
+			"index.html",
+			"wenti/img/s4.png",
+			"wenti/img/s2.png",
+			"wenti/img/s1.png",
+			"wenti/img/s3.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"jiangshi/jiangshi.html": {
+		"resources": [
+			"jiangshi/img/s4.png",
+			"jiangshi/img/jiangshi1.png",
+			"jiangshi/iconfont/iconfont.woff",
+			"jiangshi/img/banner1.jpg",
+			"jiangshi/img/jiangshi4.jpg",
+			"jiangshi/img/jiangshi2.png",
+			"jiangshi/img/jiangshi5.jpg",
+			"jiangshi/css/iconfont.css",
+			"jiangshi/img/jiangshi3.png",
+			"jiangshi/img/qq.png",
+			"jiangshi/img/s3.png",
+			"jiangshi/img/s1.png",
+			"jiangshi/img/s2.png",
+			"jiangshi/js/tianmao.js",
+			"jiangshi/css/youkeyi.css",
+			"index.html",
+			"xueyuan/xueyuan.html"
+		],
+		"refer": [
+			"index.html",
+			"xueyuan/xueyuan.html"
+		]
+	},
+	"xinwen/xinwen.html": {
+		"resources": [
+			"xinwen/img/media_line.png",
+			"xinwen/img/qq.png",
+			"xinwen/img/s3.png",
+			"xinwen/css/youkeyi.css",
+			"xinwen/img/banner1.jpg",
+			"xinwen/img/20170117025727653.jpg",
+			"xinwen/img/s1.png",
+			"xinwen/img/20170217023531383.png",
+			"xinwen/img/s2.png",
+			"xinwen/iconfont/iconfont.woff",
+			"index.html",
+			"xinwen/img/20170117030101717.jpg",
+			"xinwen/img/s4.png",
+			"xinwen/img/20170117033628827.jpg",
+			"xinwen/js/tianmao.js",
+			"xinwen/img/media_icon.png",
+			"xinwen/img/20170117032029524.jpg",
+			"xinwen/css/iconfont.css",
+			"wenti/wenti.html"
+		],
+		"refer": [
+			"index.html",
+			"wenti/wenti.html"
+		]
+	},
+	"WEB/web.html": {
+		"resources": [
+			"WEB/img/about_004.png",
+			"WEB/img/qq.png",
+			"WEB/img/fwtx3.png",
+			"WEB/img/fwtx6.png",
+			"WEB/img/web4back.png",
+			"WEB/img/web1back.png",
+			"WEB/img/web1backs.png",
+			"WEB/img/webkcback.png",
+			"WEB/img/fwtx5.png",
+			"WEB/img/webbanner.png",
+			"WEB/img/fwtx2.png",
+			"WEB/img/btn.png",
+			"WEB/css/youkeyi.css",
+			"WEB/img/fwtx1.png",
+			"WEB/img/xiaoren.png",
+			"WEB/img/web4back2 (1).png",
+			"WEB/img/webbfb.png",
+			"WEB/img/ui1lines.png",
+			"WEB/css/iconfont.css",
+			"WEB/img/fwtx4.png",
+			"WEB/iconfont/iconfont.woff",
+			"WEB/js/tianmao.js",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"PHP/index.html": {
+		"resources": [
+			"PHP/img/phpbanner.png",
+			"PHP/img/orange.png",
+			"PHP/iconfont/iconfont.woff",
+			"PHP/js/tianmao.js",
+			"PHP/img/qq.png",
+			"PHP/css/iconfont.css",
+			"PHP/css/youkeyi.css",
+			"jiangshi/jiangshi.html",
+			"PHP/img/phptitle1.png",
+			"PHP/img/titleL.png",
+			"PHP/img/titleR.png",
+			"PHP/img/phptitle2.png",
+			"PHP/img/phptitle5.png",
+			"PHP/img/fwtx4.png",
+			"PHP/img/fwtx6.png",
+			"PHP/img/fwtx2.png",
+			"PHP/img/fwtx3.png",
+			"PHP/img/fwtx1.png",
+			"PHP/img/fwtx5.png",
+			"PHP/img/phptitle3.png",
+			"PHP/img/btn.png",
+			"PHP/img/bfb1.png",
+			"PHP/img/bfb2.png",
+			"PHP/img/phptitle4.png",
+			"PHP/img/phptitle7.png",
+			"PHP/img/phpzw2.png",
+			"PHP/img/phpren.png",
+			"PHP/img/phptitle8.png",
+			"PHP/img/phpzw5.png",
+			"PHP/img/phpzw6.png",
+			"PHP/img/phpzw3.png",
+			"index.html",
+			"PHP/img/phpzw1.png",
+			"PHP/img/phpzw4.png",
+			"PHP/img/phptitle6.png"
+		],
+		"refer": [
+			"jiangshi/jiangshi.html",
+			"index.html"
+		]
+	},
+	"UI/ui.html": {
+		"resources": [
+			"UI/img/ui52.png",
+			"UI/img/fwtx2.png",
+			"UI/img/ui53.png",
+			"UI/img/qq.png",
+			"UI/img/ui2lines.png",
+			"UI/img/uititle3.png",
+			"UI/img/btn.png",
+			"UI/img/ui51.png",
+			"UI/img/bfb.png",
+			"UI/img/uititle2.png",
+			"UI/img/ui2back.png",
+			"UI/img/fwtx3.png",
+			"UI/css/iconfont.css",
+			"UI/img/fwtx1.png",
+			"UI/js/tianmao.js",
+			"UI/img/fwtx5.png",
+			"UI/img/uibanner.png",
+			"UI/img/uibanners.png",
+			"UI/img/ui54.png",
+			"UI/img/fwtx4.png",
+			"UI/img/ui11s.png",
+			"UI/img/uititle1.png",
+			"UI/img/ui1lines.png",
+			"UI/img/ui4back.png",
+			"UI/css/youkeyi.css",
+			"UI/img/fwtx6.png",
+			"UI/img/ui55.png",
+			"UI/iconfont/iconfont.woff",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"guanyu/our.html": {
+		"resources": [
+			"guanyu/img/our2.png",
+			"guanyu/js/index.js",
+			"guanyu/img/right.png",
+			"guanyu/img/our3.png",
+			"guanyu/img/banner.png",
+			"guanyu/img/jian.png",
+			"guanyu/img/right2.png",
+			"guanyu/img/our4.png",
+			"guanyu/css/our.css",
+			"guanyu/img/our1.png",
+			"guanyu/img/left2.png",
+			"guanyu/img/left.png"
+		]
+	},
+	"dongtai/xinwen.html": {
+		"resources": [
+			"dongtai/js/tianmao.js",
+			"dongtai/img/s2.png",
+			"dongtai/img/dongtai3.png",
+			"dongtai/img/s1.png",
+			"dongtai/img/dongtai2.png",
+			"dongtai/iconfont/iconfont.woff",
+			"dongtai/img/media_icon.png",
+			"dongtai/css/iconfont.css",
+			"dongtai/css/youkeyi.css",
+			"dongtai/img/s4.png",
+			"dongtai/img/dongtai1.png",
+			"dongtai/img/dongtai5.png",
+			"dongtai/img/20170316061557304.jpg",
+			"dongtai/img/media_line.png",
+			"dongtai/img/qq.png",
+			"dongtai/img/s3.png",
+			"dongtai/img/banner1.jpg",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"mianfeitijian/tijian.html": {
+		"resources": [
+			"mianfeitijian/js/tianmao.js",
+			"mianfeitijian/img/tijian1.png",
+			"mianfeitijian/img/banner1.jpg",
+			"mianfeitijian/img/tijian3.png",
+			"mianfeitijian/css/iconfont.css",
+			"mianfeitijian/css/youkeyi.css",
+			"mianfeitijian/img/tijian2.png",
+			"index.html"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"quanzhan/index.html": {
+		"resources": [
+			"quanzhan/img/qzzw5.png",
+			"quanzhan/css/iconfont.css",
+			"quanzhan/css/youkeyi.css",
+			"quanzhan/img/green.png",
+			"quanzhan/img/qztitleback.png",
+			"quanzhan/img/qzzw8.png",
+			"quanzhan/img/qzfw6.png",
+			"quanzhan/img/qzbanner.png",
+			"quanzhan/img/qzyyk.png",
+			"quanzhan/img/sz1.png",
+			"quanzhan/img/qzfw4.png",
+			"quanzhan/img/sz5.png",
+			"quanzhan/img/qzfw5.png",
+			"quanzhan/img/sz3.png",
+			"quanzhan/img/qztitleline.png",
+			"quanzhan/img/blue.png",
+			"quanzhan/img/qzbili.png",
+			"quanzhan/img/sz2.png",
+			"quanzhan/img/pursle.png",
+			"quanzhan/img/qzzw7.png",
+			"quanzhan/img/yellow.png",
+			"quanzhan/js/tianmao.js",
+			"quanzhan/img/sz4.png",
+			"quanzhan/img/qzzw3.png",
+			"quanzhan/img/qzanniu.png",
+			"quanzhan/img/qzzw1.png",
+			"quanzhan/img/sz6.png",
+			"quanzhan/img/qzzw6.png",
+			"quanzhan/img/qzzw2.png",
+			"quanzhan/img/qzfw1.png",
+			"quanzhan/img/qz1back.png",
+			"index.html",
+			"quanzhan/img/qzzw4.png",
+			"quanzhan/img/qzfw3.png",
+			"quanzhan/img/qzfw2.png",
+			"quanzhan/img/red.png"
+		],
+		"refer": [
+			"index.html"
+		]
+	},
+	"zhuxue/zhuxue.html": {
+		"resources": [
+			"zhuxue/img/banner1.jpg",
+			"index.html",
+			"zhuxue/css/youkeyi.css",
+			"zhuxue/img/qq.png",
+			"zhuxue/js/tianmao.js",
+			"zhuxue/iconfont/iconfont.woff",
+			"zhuxue/css/iconfont.css"
+		],
+		"refer": [
+			"index.html"
+		]
+	}
+}

@@ -1,0 +1,165 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background-image: url(../images/2.jpg);
+	background-size: 100%;
+}
+.top{
+	width: 600px;
+	height: auto;
+	color: brown;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	margin: 20px auto;
+	font-size: 16px;
+}
+.top>.song{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+.top>.author{
+	font-size: 20px;
+	text-align: center;
+	margin-top: 10px;
+}
+.top>.lyrics{
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	margin-top: 15px;
+	text-align: center;
+	margin-top: 3px;
+}
+.top>.lyrics>li{
+	padding: 10px;
+}
+.top>.lyrics>.hot{
+	color: yellow;
+}
+.button{
+	width: 100%;
+	height: 100px;
+	background: rgba(160,0,0,0.5);
+	position: fixed;
+	bottom: 100px;
+}
+.houtui{
+	width: 47px;
+	height: 47px;
+	background: yellow;
+	margin-left: 100px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 48px;
+}
+.houtui i{
+	font-size: 45px;
+}
+.kaishi{
+	width: 50px;
+	height: 50px;
+	background: yellow;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 45px;
+}
+.kaishi i{
+	font-size: 50px;
+}
+.qianjin{
+	width: 45px;
+	height: 45px;
+	background: yellow;
+	margin-left: 30px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 47px;
+}
+.qianjin i{
+	font-size: 45px;
+}
+.tupian{
+	width: 90px;
+	height: 90px;
+	background: blue;
+	margin-left: 50px;
+	float: left;
+}
+.jindu{
+	width: 600px;
+	height: 13px;
+	border: 1px solid palegreen;
+	border-radius: 9px;
+	margin-left: 50px;
+	margin-top: 25px;
+	float: left;
+	position: relative;
+}
+.jindu1{
+	width: 100%;
+	height: 13px;
+	background: yellow;
+	border-radius: 9px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.time{
+	width: 100px;
+	height: 26px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;	
+	color: yellow;
+}
+
+.info{
+	width: 100px;
+	height: 40px;
+	float: left;
+	margin-left: 50px;
+	margin-top: 20px;
+	color: yellow;
+}
+.volume{
+	width: 150px;
+	height: 20px;
+	border:1px solid blue;
+	position: relative;
+	float: left;
+	margin-left: 100px;
+	margin-top: 40px;
+	border-radius: 10px;
+}
+.volumeC{
+	width: 100%;
+	height: 20px;
+	background: yellow;
+	border-radius: 10px;
+}
+
+.volumeBtn{
+	width: 22px;
+	height: 22px;
+	background: green;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 50px;
+}

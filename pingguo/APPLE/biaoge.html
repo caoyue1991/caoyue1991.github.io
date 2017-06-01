@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		table{
+			border-collapse: collapse;
+			width: 100%;
+			text-align: center;
+		}
+		.box{
+			width: 600px;
+			height: auto;
+			padding: 10px 15px;
+			margin: 20px auto;
+			background: #f0f0f0;
+			border-radius: 10px;
+			position: relative;
+		}
+		th{
+			padding: 5px 0;
+		}
+		td{
+			padding: 5px 0;
+		}
+		td button{
+			width: 50px;
+			height: 35px;
+			background: #ff6700;
+			text-align: center;
+			line-height: 35px;
+		}
+		#and{
+			width: 50px;
+			height: 35px;
+			background: #FF6700;
+			text-align: center;
+			line-height: 35px;
+			/*position: absolute;
+			right: 35px;
+			top: 20px;*/
+		}
+		tr{
+			width: 100%;
+			height: 41px;
+			transition: all 0.5s linear;
+		}
+	</style>
+	<body>
+		<div class="box">
+			<table>
+				<tr>
+					<th>姓名</th>
+					<th>性别♀/♂</th>
+					<th>年龄</th>
+					<th>电话☎</th>
+					<th class="del">操作</th>
+				</tr>
+				<tr>
+					<td>曹越</td>
+					<td>👦</td>
+					<td>18</td>
+					<td>10086</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<tr>
+					<td>刘将</td>
+					<td>👦</td>
+					<td>18</td>
+					<td>10010</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<tr>
+					<td>王腾飞</td>
+					<td>👧</td>
+					<td>18</td>
+					<td>10086</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<tr>
+					<td>于🍎</td>
+					<td>👧</td>
+					<td>18</td>
+					<td>10086</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<tr>
+					<td>王亚飞</td>
+					<td>👦</td>
+					<td>18</td>
+					<td>10086</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<tr>
+					<td>张君🍑</td>
+					<td>👧</td>
+					<td>18</td>
+					<td>10086</td>
+					<td class="del"><button>删除</button></td>
+				</tr>
+				<button id="and">添加</button>
+			</table>
+		</div>
+	</body>
+</html>
+<script src="4-28.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+//	let box=$(".box")[0];
+//	let jia=document.getElementsByClassName("jia")[0];
+//	let table=document.getElementsByTagName("table");
+//	let tr=document.querySelectorAll("tr");
+//	let det=document.querySelectorAll("td button");
+//	console.log(table)
+//	console.log(tr)
+//	for(let i=0;i<det.length;i++){
+//		det[i].onclick=function(){
+//			tr[i+1].style.display="none"
+//		}
+//	}
+//	jia.onclick=function(){
+//		
+//	}
+	
+	$(function(){
+		let table=$("tbody")[0];
+		let box=$(".box")[0];
+		let and=$("#and");
+
+		localStorage.student=`[
+						{"name":"任雨","sex":"👧","age":"18","tell":"110"},
+						{"name":"崔博城","sex":"👦","age":"18","tell":"110"},
+						{"name":"刘婷","sex":"👧","age":"18","tell":"110"},
+						{"name":"贾浩","sex":"👦","age":"18","tell":"110"}
+					]`
+			let str = JSON.stringify(localStorage.student)
+			let json=JSON.parse(str);
+			console.log(typeof localStorage.student)
+			console.log(json[0]);
+			let student=JSON.parse(localStorage.student);
+//			student.forEach(function(value){
+//					let tr=document.createElement("tr");
+//					tr.innerHTML=`
+//							<td>${value.name}</td>
+//							<td>${value.sex}</td>
+//							<td>${value.age}</td>
+//							<td>${value.tell}</td>
+//							<td class="del"><button>删除</button></td>
+//						`;
+//						table.appendChild(tr)
+//			})
+		//编辑td  事件委派  td-->table
+		//创建input
+		//单元格 -->input
+		//单元格清空
+		//input-->单元格
+		//编辑之后  保存input.value
+		//input.value-->remove
+		table.onclick=function(e){
+			let obj=e.target;
+			if(obj.nodeName=="TD" && obj.className!="del"){
+				
+				let input=document.createElement("input");
+//				let input=$("input");
+				let odiv=obj.innerText;
+				input.value=odiv;
+				obj.innerText="";
+				obj.appendChild(input);
+				input.onblur=function(){
+					let newv=input.value;
+					obj.removeChild(input);
+					obj.innerText=newv;
+				}
+					
+			}else if(obj.nodeName=="BUTTON"){
+//					alert(1)
+					let tr=obj.parentNode.parentNode;
+					tr.style.transform="translateX(600px)";
+					tr.addEventListener("webkitTransitionEnd",function(){
+						table.removeChild(tr);
+					},false)
+					
+				}
+		}
+	
+				and.onclick=function(){
+					let tr=document.createElement("tr");
+					tr.innerHTML=`<tr>
+									<td>高靖🍑</td>
+									<td>👧</td>
+									<td>18</td>
+									<td>10086</td>
+									<td class="del"><button>删除</button></td>
+								</tr>`
+					table.appendChild(tr)
+					
+				}
+		
+	
+	
+	})
+			
+
+//		student.forEach(){
+//			
+//		}
+	
+</script>

@@ -1,0 +1,21 @@
+{
+	"index.html": {
+		"resources": [
+			"img/logo.png",
+			"js/tianmao.js",
+			"css/youkeyi.css",
+			"img/banner.png",
+			"img/icon.png",
+			"img/batu.png",
+			"img/ufo.png",
+			"img/tijian.png",
+			"img/shiting.png",
+			"img/youyikedongtai.png",
+			"img/guanyuwomen.png",
+			"img/qq.png",
+			"css/iconfont.css",
+			"iconfont/iconfont.woff",
+			"img/banner1.jpg"
+		]
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"index.html": {
+		"resources": [
+			"img/logo.png",
+			"js/tianmao.js",
+			"css/youkeyi.css",
+			"img/banner.png",
+			"img/icon.png",
+			"img/batu.png",
+			"img/ufo.png",
+			"img/tijian.png",
+			"img/shiting.png",
+			"img/youyikedongtai.png",
+			"img/guanyuwomen.png",
+			"img/qq.png",
+			"css/iconfont.css",
+			"iconfont/iconfont.woff",
+			"img/banner1.jpg",
+			"img/xueyuan1.png",
+			"img/xueyuan2.png",
+			"img/xueyuan3.png",
+			"img/xueyuan4.png",
+			"img/xueyuan5.png",
+			"img/jiangshi1.png",
+			"img/jiangshi2.png",
+			"img/jiangshi3.png",
+			"img/jiangshi5.jpg",
+			"img/jiangshi4.jpg"
+		]
+	},
+	"tijian.html": {
+		"resources": [
+			"img/s2.png",
+			"img/qq.png",
+			"img/s3.png",
+			"img/jiangshi3.png",
+			"img/banner1.jpg",
+			"img/jiangshi1.png",
+			"img/jiangshi4.jpg",
+			"img/s4.png",
+			"css/iconfont.css",
+			"img/jiangshi5.jpg",
+			"iconfont/iconfont.woff",
+			"css/youkeyi.css",
+			"img/jiangshi2.png",
+			"img/s1.png",
+			"js/tianmao.js",
+			"img/tijian1.png",
+			"img/tijian2.png",
+			"img/tijian3.png"
+		]
+	},
+	"zhuxue.html": {
+		"resources": [
+			"img/qq.png",
+			"img/tijian3.png",
+			"css/iconfont.css",
+			"img/tijian2.png",
+			"img/banner1.jpg",
+			"iconfont/iconfont.woff",
+			"css/youkeyi.css",
+			"img/tijian1.png",
+			"js/tianmao.js"
+		]
+	}
+}

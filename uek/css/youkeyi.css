@@ -1,0 +1,485 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*font-size: 12px;*/
+	 -webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-appearance: none;/*安卓不支持*/
+	-webkit-text-size-adjust: 100%;
+	-webkit-user-select: none;	
+	-webkit-overflow-scrolling: touch;
+	<a href="tel:110">请拨打电话110</a>
+	<a href="mailto:qq@.com">请发送邮件qq@.com</a>
+	-webkit-user-select:none;user-select:none;
+	 -webkit-tap-highlight-color:rgba(255,255,255,0); 
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	-webkit-transform: translate(0,0,0);
+	/*transform: translate3d(0, 0, 0);*/
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}
+body {-webkit-overflow-scrolling:touch; overflow-scrolling: touch;}
+p{max-height:9999999px}
+
+
+body{
+	font-family: helvetica;
+}
+
+img{
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+/*html{
+	font-size: 85px;
+}*/
+
+
+.box{
+	width: 100%;
+	height: 1.4rem;
+	position: relative;
+}
+.top{
+	width: 100%;
+	height: 0.41rem;
+	z-index: 99;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(29,79,140,0.7);
+	display: flex;
+}
+.logo{
+	width: 0.97rem;
+	height: 0.35rem;
+	margin:0.06rem auto;
+}
+.logo1{
+	width: 0.29rem;
+	height: 0.29rem;
+	float: left;
+	margin-top:0.06rem
+}
+.logo2{
+	width: 0.6rem;
+	height: 0.29rem;
+	float: left;
+	margin-top:0.06rem;
+	font-size: 0.18rem;
+	line-height: 0.29rem;
+	color: #fff;
+}
+.tupiana{
+	font-size: 0.14rem;
+	text-align: center;
+	
+}
+.tupian{
+	width: 100%;
+	height: auto;
+	display: flex;
+	background: #EAEDED;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}
+.tupian a{
+	width: 0.66rem;
+	height: 0.66rem;
+	display: block;	
+	margin: 0.1rem;
+}
+.tua{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu1{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu1a{
+	background: #fff url(../img/batu.png) 0 0 no-repeat;
+    background-size: 1.3rem;
+    
+}
+.tub{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu2{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu2a{
+	background: #fff url(../img/batu.png) -0.65rem 0rem no-repeat;
+    background-size: 1.3rem;
+}
+.tuc{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu3{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu3a{
+	background: #fff url(../img/batu.png) 0.13rem -0.7rem no-repeat;
+    background-size: 1.3rem;
+}
+.tud{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu4{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu4a{
+	background: #fff url(../img/ufo.png) no-repeat;
+    background-size: cover;
+}
+.tue{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu5{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tu5a{
+	background: #fff url(../img/batu.png) -0.6rem -0.7rem no-repeat;
+    background-size: 1.3rem;
+}
+.tuf{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu6{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tu6a{
+	background: #fff url(../img/batu.png) 0 -2.1rem no-repeat;
+    background-size: 1.3rem;
+}
+.tug{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu7{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu7a{
+	background: #fff url(../img/batu.png) 0 -1.4rem no-repeat;
+    background-size: 1.3rem;
+}
+.tuh{
+	width: 0.86rem;
+	height: auto;
+	font-size:0.16rem;
+	text-align: center;
+	line-height: 0.35rem;
+}
+.tu8{
+	width: 0.86rem;
+	height: 0.86rem;
+	background: #fff;
+	margin-top: 0.1rem;
+	border-radius: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.tu8a{
+	background: #fff url(../img/batu.png) -0.65rem -1.4rem no-repeat;
+    background-size: 1.3rem;
+}
+.fuwu{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.16rem;
+	text-align: center;
+	color: blue;
+	line-height: 0.28rem;
+	margin-top: 0.1rem;
+	border-bottom: 1px solid #ccc;
+}
+.tui{
+	width: 100%;
+	height: 0.93rem;
+	box-sizing: border-box;
+}
+.tijian{
+	width: 49%;
+	height: 0.93rem;
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.tijian a{
+	color: #000000;
+}
+.daikuang{
+	width: 50%;
+	height: 0.93rem;
+	float: left;
+	border-bottom: 1px solid #ccc;
+}
+.daikuang a{
+	color: #000;
+}
+.tuijian1{
+	width: 50%;
+	height: 0.15rem;
+	margin-top: 0.1rem;
+	font-size: 0.14rem;
+	float: left;
+	margin-left: 0.07rem;
+}
+.tuijian2{
+	width: auto;
+	height: 0.15rem;
+	margin-top: 0.1rem;
+	font-size: 0.12rem;
+	color: #B4B7B9;
+	margin-top: 0.03rem;
+	margin-left: 0.07rem;
+	float: left;
+}
+.tuijian3{
+	width: 0.66rem;
+	height: 0.66rem;
+	float:right;
+	margin-right: 0.1rem;
+	margin-bottom: 0.2rem;
+	background: #fff url(../img/batu.png) 0 -2.2rem no-repeat;
+    background-size: 1rem;
+}
+.tuijian1{
+	width: 50%;
+	height: 0.15rem;
+	margin-top: 0.1rem;
+	font-size: 0.14rem;
+	float: left;
+	margin-left: 0.07rem;
+}
+.tuijian2{
+	width: 50%;
+	height: 0.10rem;
+	margin-top: 0.1rem;
+	font-size: 0.12rem;
+	color: #B4B7B9;
+	margin-top: 0.03rem;
+	margin-left: 0.03rem;
+}
+.tuijian4{
+	width: 0.8rem;
+	height: 0.68rem;
+	float:right;
+	margin-right: 0.1rem;
+	background: #fff url(../img/batu.png) 0 -3rem no-repeat;
+    background-size: 1.02rem;
+}
+.ting{
+	width: 100%;
+	height: 0.59rem;
+	display: flex;
+}
+.shiting{
+	width: 1.27rem;
+	height: 0.59rem;
+	border-right: 1px solid #ccc;
+}
+.shiting a{
+	color: #000;
+}
+.dongtai{
+	width: 1.27rem;
+	height: 0.59rem;
+	border-right: 1px solid #ccc;
+}
+.dongtai a{
+	color: #000;
+}
+.guanyu{
+	width: 1.16rem;
+	height: 0.59rem;
+	border-right: 1px solid #ccc;
+}
+.guanyu a{
+	color: #000;
+}
+.shiting1{
+	width: 0.25rem;
+	height: 0.25rem;
+	margin-left: 0.15rem;
+	margin-top: 0.06rem;
+	float: left;
+}
+.shiting2{
+	width: 0.66rem;
+	height: 0.15rem;
+	float: left;
+	margin-left: 0.05rem;
+	margin-top: 0.05rem;
+	font-size: 0.13rem;
+}
+.shiting3{
+	width: 0.64rem;
+	height: 0.25rem;
+	float: left;
+	margin-left: 0.05rem;
+	margin-top: 0.05rem;
+	font-size: 0.12rem;
+	color: #ccc;
+}
+
+.bottom{
+	width: 100%;
+	height: 0.5rem;
+/* 	background: red; */
+}
+
+
+.fixed{
+	width: 100%;
+	height:auto;
+	background:#e7e7e7;
+	position: fixed;
+	z-index:999;
+	bottom: 0;
+}
+.fixed .box11{
+	width: 30%;
+	height: 0.5rem;
+	background-color: #E7E7E7;
+	line-height: 0.5rem;
+	float: left;
+	padding:0 2%;
+	box-sizing: border-box;
+}
+.fixed .icon-qq01{
+	display: block;
+	font-size:0.3rem;
+	float: left;
+}
+.fixed .span5{
+	display: block;
+	font-size: 0.16rem;
+	color: #797979;
+	margin-top: 0.02rem;
+}
+.fixed .box12{
+	width: 30%;
+	height:0.5rem;
+	background-color: #E7E7E7;
+	line-height: 0.5rem;
+	float:right;
+	padding:0 2%;
+	box-sizing: border-box;
+}
+.fixed .icon-duanxin2-lg{
+	display: block;
+	font-size:0.18rem;
+	float: left;
+	margin-left: 3%;
+	margin-top: 0.02rem;'
+}
+.fixed .span7{
+	display: block;
+	font-size: 0.16rem;
+	color: #797979;
+	margin-top: 0.02rem;
+	margin-left: 0.25rem;
+}
+.fixed .span6{
+	display: block;
+	font-size: 0.18rem;
+	color: #797979;
+	color: #fff;
+	font-weight:bold;
+	margin-left: 0.3rem;
+
+}
+.fixed .box13{
+	width: 40%;
+	height:0.45rem;
+	background-color: #FF8D12;
+	line-height: 0.45rem;
+	float:left;
+	padding:0 4%;
+	box-sizing: border-box;
+	border-radius: 5% 5%;
+	position: absolute;
+	bottom: 0.05rem;
+	left: 30%;
+	box-shadow:0 0 5px 5px #FF8D12;
+}
+.fixed .icon-dianhua-copy{
+	display: block;
+	font-size:0.25rem;
+	float: left;
+	color: #fff;
+}

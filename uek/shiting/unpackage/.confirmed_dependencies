@@ -1,0 +1,19 @@
+{
+	"listen.html": {
+		"resources": [
+			"img/banner.png",
+			"css/listen.css",
+			"img/left.png",
+			"img/listen3.png",
+			"css/iconfont.css",
+			"img/right2.png",
+			"img/listen2.png",
+			"iconfont/iconfont.woff",
+			"img/right.png",
+			"img/listen1.png",
+			"img/jian.png",
+			"js/index.js",
+			"img/left2.png"
+		]
+	}
+}

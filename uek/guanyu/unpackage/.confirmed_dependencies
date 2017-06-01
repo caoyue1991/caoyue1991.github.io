@@ -1,0 +1,18 @@
+{
+	"our.html": {
+		"resources": [
+			"img/our1.png",
+			"img/banner.png",
+			"css/our.css",
+			"img/our2.png",
+			"img/left.png",
+			"img/our4.png",
+			"img/right2.png",
+			"img/right.png",
+			"img/our3.png",
+			"img/jian.png",
+			"js/index.js",
+			"img/left2.png"
+		]
+	}
+}

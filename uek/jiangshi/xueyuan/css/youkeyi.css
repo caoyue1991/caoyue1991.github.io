@@ -1,0 +1,270 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	/*font-size: 12px;*/
+	 -webkit-tap-highlight-color: rgba(0,0,0,0); 
+	-webkit-appearance: none;/*安卓不支持*/
+	-webkit-text-size-adjust: 100%;
+	-webkit-user-select: none;	
+	-webkit-overflow-scrolling: touch;
+	<a href="tel:110">请拨打电话110</a>
+	<a href="mailto:qq@.com">请发送邮件qq@.com</a>
+	-webkit-user-select:none;user-select:none;
+	 -webkit-tap-highlight-color:rgba(255,255,255,0); 
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	-webkit-transform: translate(0,0,0);
+	/*transform: translate3d(0, 0, 0);*/
+}
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 {-webkit-text-size-adjust:none;}
+body {-webkit-overflow-scrolling:touch; overflow-scrolling: touch;}
+p{max-height:9999999px}
+
+
+body{
+	font-family: helvetica;
+}
+
+img{
+	display: block;
+}
+
+a{
+	text-decoration: none;
+}
+/*html{
+	font-size: 85px;
+}*/
+
+
+.box{
+	width: 100%;
+	height: 2.13rem;
+	position: relative;
+}
+.top{
+	width: 100%;
+	height: 0.41rem;
+	z-index: 99;
+	position: fixed;
+	top:0;
+	left: 0;
+	background: rgba(29,79,140,0.7);
+	display: flex;
+}
+.top ul{
+	width: 100%;
+	height: 0.41rem;
+}
+.top ul li{
+	width: 20%;
+	height: 0.41rem;
+	text-align: center;
+	float: left;
+	font-size: 0.16rem;
+	line-height: 0.41rem;
+	color:#fff;	
+}
+.shouye{
+	width: 3.5rem;
+	height: 0.32rem;
+	margin:0 auto;
+	font-size: 0.14rem;
+	line-height: 0.32rem;
+	font-weight: bold;
+}
+
+.xueyuan{
+	width: 3.4rem;
+	height: 5.38rem;
+	margin: 0 auto;
+}
+.xueyuan1{
+	width: 100%;
+	height: 1.09rem;
+	display: flex;
+	border-bottom: 0.015rem solid #000;
+}
+.xueyuan2{
+	width: 100%;
+	height: 1.09rem;
+	display: flex;
+}
+.zhaopian1{
+	width: 1.06rem;
+	height: 0.7rem;
+	float: left;
+	margin-left: 0.15rem;
+	margin-top: 0.15rem;
+}
+.xingmin{
+	width: 1.9rem;
+	height: 0.2rem;
+	float: left;
+	margin-left: 0.15rem;
+	margin-top: 0.15rem;
+	border-bottom: 0.015rem dashed #000;
+}
+.xingmin h3{
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+}
+.xingmin h3 span{
+	font-size: 0.12rem;
+}
+
+.xingmin2{
+	width: 1.9rem;
+	height: 0.2rem;
+	margin-top:0.5rem;
+	margin-left: -1.9rem;
+	font-size: 0.14rem;
+	line-height: 0.2rem;
+	color: green;
+}
+
+
+
+
+
+
+.fanye{
+	width: 3.27rem;
+	height: 0.25rem;
+	margin: 0.1rem auto;
+	display: flex;
+}
+.left{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: #01B5FF;
+	border-radius: 50%;
+}
+.lefta{
+	width: 0.15rem;
+	height: 0.15rem;
+	border-radius: 50%;
+	border: 0.015rem solid #fff;
+	margin: 0.03rem auto;
+	font-size: 0.14rem;
+	color: #fff;
+	text-align: center;
+}
+.shangyiye{
+	width: 0.75rem;
+	height: 0.25rem;
+	background: #01B5FF;
+	margin-left: 0.15rem;
+	border-radius: 0.15rem;
+	font-size: 0.14rem;
+	line-height: 0.25rem;
+	color: #fff;
+}
+.leftb{
+	width: 0.15rem;
+	height: 0.15rem;
+	border-radius: 50%;
+	border: 0.015rem solid #fff;
+	margin: 0.03rem auto;
+	font-size: 0.14rem;
+	color: #fff;
+	float: left;
+	margin-left: 0.1rem;
+	text-align: center;
+	line-height: 0.18rem;
+}
+.diyiye{
+	width: 0.7rem;
+	height: 0.25rem;
+	margin-left: 0.15rem;
+	border-radius: 0.15rem;
+	border:0.015rem  solid #01B5FF;
+	font-size: 0.14rem;
+	text-align: center;	
+	line-height: 0.25rem;
+}
+.right{
+	width: 0.25rem;
+	height: 0.25rem;
+	background: #01B5FF;
+	border-radius: 50%;
+	margin-left: 0.15rem;
+}
+.banquan{
+	width: 100%;
+	height: 0.4rem;
+	background: #DBE5F0;
+}
+.banquan1{
+	width: 100%;
+	height: 0.2rem;
+	float: left;
+	font-size: 0.12rem;
+	color: #000;
+	text-align: center;
+}
+.banquan2{
+	width: 100%;
+	height: 0.2rem;
+	float: left;
+	font-size: 0.12rem;
+	color: #000;
+	text-align: center;
+}
+.foota{
+	width: 100%;
+	height: 0.39rem;
+}
+.foot{
+	width: 100%;
+	height: 0.39rem;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.shitingb{
+	width: 0.96rem;
+	height: 0.39rem;
+	background: #E7E7E7;
+	float: left;
+	margin-top: 0.05rem;
+	font-size: 0.12rem;
+	line-height: 0.34rem;
+}
+.qq{
+	width: 0.22rem;
+	height: 0.15rem;
+	float: left;
+	margin-left: 0.15rem;
+	margin-top: 0.08rem;
+}
+.dianhua{
+	width: 1.78rem;
+	height: 0.41rem;
+	background: #FF8D12;
+	margin-left: 0.96rem;
+	font-size: 0.18rem;
+	text-align: center;
+	line-height: 0.39rem;
+	color: #fff;
+	margin-top: -0.05rem;
+	border-radius: 5%;
+	box-shadow: 0 0.02rem 0.05rem #666666;
+}
+.foot a{
+	color:#000;
+}
+.zaixian{
+	width: 1rem;
+	height: 0.39rem;
+	float: right;
+	background:#E7E7E7;
+	position: absolute;
+	top:0.03rem;
+	left:2.75rem;
+	font-size: 0.14rem;
+	text-align: center;	
+	line-height: 0.4rem;
+	margin-top: 0.08rem;
+}

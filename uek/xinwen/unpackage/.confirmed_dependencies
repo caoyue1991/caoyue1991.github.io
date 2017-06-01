@@ -1,0 +1,28 @@
+{
+	"index.html": {
+		"resources": [
+			"img/logo.png",
+			"js/tianmao.js",
+			"css/youkeyi.css",
+			"img/banner.png",
+			"img/icon.png",
+			"img/batu.png",
+			"img/ufo.png",
+			"img/tijian.png",
+			"img/shiting.png",
+			"img/youyikedongtai.png",
+			"img/guanyuwomen.png",
+			"img/qq.png",
+			"css/iconfont.css",
+			"iconfont/iconfont.woff",
+			"img/banner1.jpg",
+			"img/20170117033628827.jpg",
+			"img/media_line.png",
+			"img/media_icon.png",
+			"img/20170217023531383.png",
+			"img/20170117030101717.jpg",
+			"img/20170117025727653.jpg",
+			"img/20170117032029524.jpg"
+		]
+	}
+}

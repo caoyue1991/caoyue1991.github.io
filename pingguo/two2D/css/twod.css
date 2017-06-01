@@ -1,0 +1,83 @@
+/*
+* @Author: 曹越
+* @Date:   2017-03-28 09:20:40
+* @Last Modified by:   曹越
+* @Last Modified time: 2017-04-15 21:14:59
+*/
+
+
+/* 开始 */
+.prespective{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	border: 2px solid red;
+	perspective: 800px;
+	perspective-origin: 50% 50%;
+	background-image: url(../img/tu3.jpg);
+	background-size: cover;
+	
+}
+
+  @keyframes animation1{
+ 	from{
+ 		transform: rotate3d(0, 0, 0, 0deg); 
+ 	}
+ 	to{
+ 		transform: rotate3d(-150, 200, 200, 720deg);
+ 	}
+ } 
+
+.prespective .after{
+	width: 200px;
+	height: 200px;
+	background: red;
+	margin: 150px auto;
+	position: relative;	
+	transform-style: preserve-3d;
+	/* transform-origin:  200px 200px 200px; */
+	/* transition: all 5s ease; */
+	z-index: 99;
+	 animation-name: animation1;
+ 	animation-duration: 13s;
+ 	-webkit-animation-timing-function: linear;
+ 	animation-iteration-count: infinite; /*  播放次数 infinite 循环 */
+ 	 /* animation-direction: alternate;  */	 
+}
+/* .prespective .after:hover{
+	transform: translate3d(30px, 30px, 30px)
+} */
+
+.after div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.after .right{
+	left: 200px;
+	transform-origin: left;
+	transform:rotateY(-90deg);
+}
+.after .left{
+	left:-200px;
+	transform:rotateY(90deg); 
+	transform-origin: right;
+}
+.after .bottom{
+	top:200px;
+	transform:rotateX(90deg);
+	transform-origin: top;
+}
+.after .top{
+	top: -200px;
+	transform:rotateX(-90deg);
+	transform-origin: bottom;
+ }
+ .after .before{
+ 	transform: translateZ(200px) ;
+ } 
+
+ 

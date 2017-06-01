@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/music.css"/>
+		<link rel="stylesheet" href="css/iconfont.css" />
+	</head>
+	<body>
+		<audio src="music/情书.mp3"></audio>
+		<div class="top">
+			<div class="song">初爱</div>
+			<div class="author">曹越</div>
+			<ul class="lyrics">
+				<li class="hot">我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+				<li>我要飞上天和太阳肩并肩</li>
+			</ul>
+		</div>
+		<div class="button">
+			<div class="content">
+				<div class="left">
+					<div class="houtui">
+						<i class="iconfont icon-prev01 prev"> </i>
+					</div>
+					<div class="kaishi">
+						 <i class="iconfont icon-play  play"> </i>
+					</div>
+					<div class="qianjin">
+						 <i class="iconfont icon-next next"> </i>
+					</div>
+				</div>
+
+					<img class="tupian" src="images/mww.jpg" width="100%" height="100%"/>
+
+				<div class="jindu">
+					<div class="jindu1"></div>
+				</div>
+				<div class="info">
+					<span>初恋 - 张三</span>
+				</div>
+				<span class="time">
+					<span class="ctime">00:00</span>
+					:<span class="dtime">04:30</span>
+				</span>
+				<div class="volume">
+					<div class="volumeC"></div>
+					<div class="volumeBtn"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="audio.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	window.onload=function(){
+		let audio=document.querySelector("audio");
+		let song=document.querySelector(".top>.song");
+		let author=document.querySelector(".top>.author");
+		let lyrics=document.querySelector(".top>.lyrics");
+		let play=document.querySelector(".kaishi");
+		let hou=document.querySelector(".houtui");
+		let qian=document.querySelector(".qianjin")
+		let string=[];
+		let jindu=document.querySelector(".jindu");
+		let jindu1=document.querySelector(".jindu1");
+		let times=document.querySelector(".time");
+		let index = 0;
+		let ctime=document.querySelector(".ctime")
+		let dtime=document.querySelector(".dtime")
+		let info=document.querySelector(".info")
+		let img=document.querySelector(".tupian")
+		let playBtn = document.querySelector('.play');
+		let nextBtn = document.querySelector(".next");
+		let prevBtn = document.querySelector(".prev");
+		let volume= document.querySelector(".volume");
+		let volumeC=document.querySelector(".volumeC");
+		let volumeBtn=document.querySelector(".volumeBtn");
+		
+		let offsetL=volume.offsetLeft;
+		volumeBtn.onmousedown=function(e){
+			let ox=e.offsetX;
+			document.onmousemove=function(e){			
+				let cx=e.clientX;
+				let lefts=cx-offsetL-ox/2;
+				volumeBtn.style.left=lefts+'px';
+				volumeC.style.width=lefts+'px';
+				audio.volume=lefts/150;
+			}
+			document.onmouseup=function(){
+				document.onmousemove=null;
+				volumeBtn.onmouseup=null;
+			}
+		}
+
+		
+		render(database[index]);
+		play.onclick=function(){
+			console.log(audio)
+			if(audio.paused){
+				audio.play()
+				playBtn.classList.toggle('icon-pause');
+			}else{
+				audio.pause()
+				playBtn.classList.toggle('icon-pause');
+			}
+		}
+		
+		nextBtn.onclick=function(){
+				index++;
+				if(index==database.length){
+					index=0
+				}
+				
+				playBtn.classList.toggle('icon-pause');
+				render(database[index]);
+				audio.play()
+		}
+		prevBtn.onclick=function(){
+				index--;
+				if(index<0){
+					index=database.length-1
+				}
+				playBtn.classList.toggle('icon-pause');
+				render(database[index]);
+		}
+		//
+		function render(obj){
+			song.innerText=obj.songs;
+			author.innerText=obj.name;
+			audio.src=obj.src;
+			
+			//bottom
+	         info.innerText = `${obj.songs} - ${obj.name} `;
+	         img.src= obj.photo;
+	         ctime.innerText = '00:00';
+	         dtime.innerText = obj.alltime
+	        //
+			
+			obj.lyrics.forEach(function(value,index){
+				string+=`<li>${value.lyric}</li>`
+			})
+			
+			lyrics.innerHTML='';
+			lyrics.innerHTML=string;
+		}
+		
+		let i=x=0;
+		audio.ontimeupdate=function(){
+			let time=audio.currentTime;
+			let m=Math.floor(time/60);
+			let s=Math.floor(time%60);
+			times.innerText=`${m}:${s}`;
+			let current = format(audio.currentTime); // 100  02:11
+	        let duration = format(audio.duration); // 100  02:11
+	        let string='';
+	        ctime.innerText = current;
+	        dtime.innerText = duration;
+	
+	        lyrics.innerHTML='';
+	        database[index]['lyrics'].forEach(function(value,index){
+	            if( value.time == current ){
+	                x = i = index;
+	            }
+	        })
+	
+	        if(x<2){
+	           i=0
+	        }else{
+	            i = x - 2;
+	        }
+
+	        for(let j=i;j<database[index]['lyrics'].length;j++){
+	            if(j==x){
+	                string+=`
+	             <li class="hot">
+	                ${database[index]['lyrics'][j]['lyric']}
+	             </li>`;
+	            }else{
+	                string+=`
+	             <li >
+	                ${database[index]['lyrics'][j]['lyric']}
+	             </li>`;
+	            }
+	
+	        }
+	        lyrics.innerHTML = string;
+		
+			
+			jindus()
+		}
+		 function  format(time){
+	        let m =  Math.floor(time /60) >=10 ? Math.floor(time /60) :  '0'+Math.floor(time /60);
+	        let s =  Math.floor(time % 60) >=10 ? Math.floor(time % 60) :  '0'+Math.floor(time % 60);
+	        return `${m}:${s}`;
+	    }
+		function jindus(){
+			let time=audio.currentTime;
+			let times=audio.duration;
+			jindu1.style.width=time/times*100+'%';
+		}
+	}
+</script>
